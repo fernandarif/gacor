@@ -51,7 +51,7 @@ if (whatsappBtn) {
   whatsappBtn.addEventListener("click", () => {
     const name = userName.textContent || "sayang";
     const message = encodeURIComponent(
-      `Halo aku${name}, aku kirim pesan ini dari halaman spesial kita ❤️,`,
+      `Halo aku ${name}, aku kirim pesan ini dari halaman spesial kita ❤️,`,
     );
     const url = WHATSAPP_NUMBER
       ? `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`
