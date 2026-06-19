@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Pacarku</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page page--welcome active" id="welcomePage">
+      <div class="hero">
+        <div class="hero__glow"></div>
+        <div class="hero__content">
+          <p class="hero__label">
+            Untukmu Kind❤️ dari Fernanda, yang selalu ada di hatimu
+          </p>
+          <h1 class="hero__title">Dokumentasi</h1>
+          <p class="hero__text">
+            Siapakah nama sayang ku, masukan nama sayangku kalau benar pasti
+            masuk.
+          </p>
+          <p class="hero__quote">
+            “Cinta kita mungkin tidak sebagus orang lain, tapi percayalah kita
+            akan indah dikemudian hari.”
+          </p>
+          <div class="form-card">
+            <label for="nameInput">Nama kamu</label>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Masukan namamu disini"
+            />
+            <button id="enterBtn" class="btn btn--primary">Masuk</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page page--content" id="contentPage" aria-hidden="true">
+      <div class="content-header">
+        <button id="backBtn" class="btn btn--ghost">Kembali</button>
+        <div>
+          <p class="content-subtitle">
+            Halo sayangku, <span id="userName">Sayang</span>
+          </p>
+          <h2 class="content-title">Pilih sesuatu yang ingin kamu lihat</h2>
+        </div>
+        <div class="social-buttons">
+          <button
+            id="whatsappBtn"
+            class="btn btn--social"
+            aria-label="WhatsApp"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-2.4 5.9l-.17.17-1.9.5a1 1 0 0 1-1.06-.26L14 16.6a6.5 6.5 0 1 1 6.99-5.1z"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.5 14.5c-.4-.2-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.2-.2.3-.8.8-1 1-.2.2-.4.2-.8.1-.4-.1-1.6-.6-3-1.9-1.1-1.1-1.8-2.4-2-3-.2-.6 0-.9.1-1 .1-.1.2-.2.3-.4.1-.1.1-.3 0-.5-.1-.2-.6-1.5-.8-2.1-.2-.6-.4-.5-.6-.5h-.6c-.2 0-.5.1-.8.3-.3.2-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 1.9 3 4.6 4.3 3 .5 3.4 1 3.9 1 0 0 .9.3 1.6.3.7 0 1.2-.4 1.4-.7.2-.3.6-.9.6-1.3 0-.4-.2-.6-.6-.9z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
+            id="instagramBtn"
+            class="btn btn--social"
+            aria-label="Instagram"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+              <path
+                d="M16 8a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"
+                stroke="currentColor"
+                stroke-width="1.2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-grid">
+        <button class="menu-card" data-target="photoSection">
+          <span class="menu-icon">📷</span>
+          <strong>Foto</strong>
+          <small>Lihat album romantis</small>
+        </button>
+        <button class="menu-card" data-target="videoSection">
+          <span class="menu-icon">🎬</span>
+          <strong>Video</strong>
+          <small>Video kenangan kita</small>
+        </button>
+        <button class="menu-card" data-target="musicSection">
+          <span class="menu-icon">🎵</span>
+          <strong>Music</strong>
+          <small>Playlist lagu cinta</small>
+        </button>
+      </div>
+
+      <div class="section" id="photoSection">
+        <h3>Foto Romantis</h3>
+        <div class="gallery" id="gallery">
+          <div
+            class="gallery__item"
+            data-description="Kenangan indah di musim semi"
+            data-title="Cafe Pesen Kopi"
+            style="background-image: url(&quot;images/foto1.jpg&quot;)"
+          ></div>
+          <div
+            class="gallery__item"
+            data-description="Momen berharga bersama orang terkasih"
+            data-title="Cafe Beli Kopi"
+            style="background-image: url(&quot;images/foto2.jpg&quot;)"
+          ></div>
+          <div
+            class="gallery__item"
+            data-description="02 Mei 2026"
+            data-title="Cafe MJ Tea"
+            style="background-image: url(&quot;images/foto3.jpeg&quot;)"
+          ></div>
+          <div
+            class="gallery__item"
+            data-description="02 Mei 2026"
+            data-title="Cafe MJ Tea"
+            style="background-image: url(&quot;images/foto3.jpeg&quot;)"
+          ></div>
+        </div>
+      </div>
+
+      <div class="section" id="videoSection">
+        <h3>Video Kenangan</h3>
+        <div class="media-grid">
+          <div class="video-card">
+            <video controls preload="metadata">
+              <source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4"
+              />
+              Browser tidak mendukung video.
+            </video>
+            <p>Lagu cinta dan momen berdua.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="musicSection">
+        <h3>Playlist Romantis</h3>
+        <div class="music-list">
+          <article class="music-item">
+            <span>1</span>
+            <div>
+              <strong>Melody Cinta</strong>
+              <p>Suasana hangat untuk malam kita.</p>
+            </div>
+          </article>
+          <article class="music-item">
+            <span>2</span>
+            <div>
+              <strong>Janji Selamanya</strong>
+              <p>Irama lembut untuk hati kita.</p>
+            </div>
+          </article>
+          <article class="music-item">
+            <span>3</span>
+            <div>
+              <strong>Senyum dan Pelukan</strong>
+              <p>Pengiring detak jantung kita.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="photo-modal" id="photoModal">
+      <div class="photo-modal__overlay" id="modalOverlay"></div>
+      <div class="photo-modal__content">
+        <button class="photo-modal__close" id="modalClose">✕</button>
+        <div class="photo-modal__image" id="modalImage"></div>
+        <div class="photo-modal__info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+        </div>
+        <div class="photo-modal__actions">
+          <a
+            id="modalDownload"
+            class="btn btn--icon"
+            download
+            aria-label="Unduh foto"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 3v9m0 0l4-4m-4 4l-4-4M5 20h14"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
